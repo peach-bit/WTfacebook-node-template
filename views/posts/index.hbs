@@ -62,13 +62,13 @@
 <body>
 
 
-<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-
-<script>
-function myFunction(x) {
-  x.classList.toggle("fa-thumbs-down");
-}
-</script>
+<style>.fa 
+  { font-size: 50px;  cursor: pointer;  user-select: none;}.fa:hover 
+  { color: darkblue;}</style></head></i><script>function myFunction(x) 
+    { x.classList.toggle();} var clicks = 0;    function onClick() 
+    {  clicks += 1; document.getElementById("clicks").innerHTML = clicks; };
+    </script><button type="button" onClick="onClick()" class="fa fa-thumbs-up"></button>    
+    <p>likes: <a id="clicks">0</a></p>
 
 
 
