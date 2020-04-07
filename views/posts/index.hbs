@@ -36,7 +36,7 @@
 <ul class="posts">
   {{#each posts}}
   <li>{{this.message}}<br>{{this.date}}</li>
-  
+  {{this.comment}}
 
   <form id="new-comment-form" action="/posts" method="post">
     <label for="comment">Comment: </label>
