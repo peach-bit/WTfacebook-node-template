@@ -3,7 +3,7 @@ var Comment = require('../models/post');
 
 var CommentController = {
   Index: function(req, res) {
-    Comment.findById({}).exec(function(err, comment) {
+    Comment.find({}).sort({message: ''}).exec(function(err, comment) {
       if (err) { throw err; }
 
       res.render('posts/index', { comment: comment });

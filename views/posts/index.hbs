@@ -38,7 +38,6 @@
   
   {{#each posts}}
   {{this.message}}<br>{{this.date}}<br>{{this.comment}}
-
 <form id="comments-list" action="/posts" method="post">
     <label for="comment">Comment: </label>
     <textarea id="comment" class='form-control' name="comment" placeholder="Comment"></textarea>
