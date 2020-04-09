@@ -1,8 +1,9 @@
 var Comment = require('../models/post');
 
+
 var CommentController = {
   Index: function(req, res) {
-    Comment.find({}).exec(function(err, comment) {
+    Comment.findById({}).exec(function(err, comment) {
       if (err) { throw err; }
 
       res.render('posts/index', { comment: comment });
@@ -21,5 +22,6 @@ var CommentController = {
     });
   }
 };
+
 
 module.exports = CommentController;
